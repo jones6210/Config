@@ -39,7 +39,7 @@ bindsym $mod+t exec texstudio
 bindsym $mod+h exec "termite --exec=htop"
 
 # start ranger
-bindsym $mod+r exec "termite --exec=ranger"
+bindsym $mod+w exec "termite --exec=ranger"
 
 # start matlab
 bindsym $mod+p exec "termite --exec=matlab"
@@ -50,6 +50,9 @@ bindsym $mod+a exec atom
 # start wicd
 bindsym $mod+i exec wicd-gtk 
 for_window [class="Wicd"] floating enable
+
+# start octave
+bindsym $mod+o exec "termite --exec=octave"
 
 #############################################################################################
 #					i3 Key Bindings
@@ -133,7 +136,7 @@ bindsym XF86AudioPrev exec "playerctl previous"
 #					Modes
 #############################################################################################
 # resize windows
-bindsym $mod+w mode "resize"
+bindsym $mod+r mode "resize"
 
 # resize mode
 mode "Resize" {
