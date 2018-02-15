@@ -1,0 +1,10 @@
+rofi.color-enabled: true
+rofi.color-normal: argb:00282a36, #f8f8f2, argb:00373844, argb:d7458588, #e2e2dc
+//rofi.color-active: arbg:00282a36, #000000, argb:00373844, argb:d7458588, #e2e2dc
+rofi.color-urgent: argb:AAff0000, #000000, argb:00373844, #696969, #e2e2dc
+rofi.color-window: argb:DD636363, #282a36, #f4f99d
+rofi.font: Noto Sans bold 18
+rofi.lines: 4
+rofi.bw: 0
+rofi.padding: 16
+
