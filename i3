@@ -29,8 +29,11 @@ bindsym $mod+space exec "rofi -show run"
 # start chromium
 bindsym $mod+b exec chromium --force-device-scale-factor=2
 
+# start firefox
+bindsym $mod+shift+b exec firefox
+
 # start spotify
-bindsym $mod+m exec spotify --force-device-scale-factor=2
+bindsym $mod+m exec spotify  --force-device-scale-factor=2
 
 # start texstudio
 bindsym $mod+t exec texstudio
@@ -48,7 +51,7 @@ bindsym $mod+p exec "termite --exec=matlab"
 bindsym $mod+a exec atom
 
 # start wicd
-bindsym $mod+i exec wicd-gtk 
+bindsym $mod+i exec wicd-gtk
 for_window [class="Wicd"] floating enable
 
 # start octave
@@ -95,8 +98,8 @@ new_window none
 new_float none
 
 # i3 workspace window gaps
-gaps inner  10
-gaps outer  5
+gaps inner  4
+gaps outer  2
 
 
 #############################################################################################
@@ -133,15 +136,13 @@ bindsym XF86AudioNext exec "playerctl next"
 bindsym XF86AudioPrev exec "playerctl previous"
 
 #############################################################################################
-#					Modes
+#					Resize
 #############################################################################################
 # resize windows
-bindsym $mod+r mode "resize"
+bindsym $mod+r mode "Resize"
 
 # resize mode
 mode "Resize" {
-        # These bindings trigger as soon as you enter the resize mode
-
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
@@ -151,6 +152,50 @@ mode "Resize" {
         # back to normal: Enter or Escape
         bindsym Return mode "default"
         bindsym Escape mode "default"
+
+        bindsym space mode "Resize 5 px"
+
+}
+
+
+
+mode "Resize 5 px" {
+	bindsym Left resize shrink width 5 px or 5 ppt
+	bindsym Down resize grow height 5 px or 5 ppt
+	bindsym Up resize shrink height 5 px or 5 ppt
+	bindsym Right resize grow width 5 px or 5 ppt
+
+	bindsym Return mode "default"
+  bindsym Escape mode "default"
+
+	bindsym space mode "Resize 2 px"
+	bindsym BackSpace mode "Resize"
+}
+
+mode "Resize 2 px" {
+	bindsym Left resize shrink width 2 px or 2 ppt
+	bindsym Down resize grow height 2 px or 2 ppt
+	bindsym Up resize shrink height 2 px or 2 ppt
+	bindsym Right resize grow width 2 px or 2 ppt
+
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+
+	bindsym space mode "Resize 1 px"
+	bindsym BackSpace mode "Resize 5 px"
+}
+
+mode "Resize 1 px" {
+	bindsym Left resize shrink width 1 px or 1 ppt
+	bindsym Down resize grow height 1 px or 1 ppt
+	bindsym Up resize shrink height 1 px or 1 ppt
+	bindsym Right resize grow width 1 px or 1 ppt
+
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+
+	bindsym space mode "Resize 1 px"
+	bindsym BackSpace mode "Resize 2 px"
 }
 
 #############################################################################################
@@ -172,7 +217,6 @@ bar {
         active_workspace #28282899 #28282899 #3d3b38
         inactive_workspace #28282899 #28282899 #3d3b38
         urgent_workspace #28282899 #28282899 #458588d7
-
 	}
 }
 
