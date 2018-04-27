@@ -24,38 +24,68 @@ exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/termite'
 bindsym $mod+Return exec termite
 
 # start rofi program launcher
-bindsym $mod+space exec "rofi -show run"
+bindsym $mod+space exec "rofi -show drun"
 
 # start chromium
 bindsym $mod+b exec chromium --force-device-scale-factor=2
 
-# start firefox
-bindsym $mod+shift+b exec firefox
-
 # start spotify
 bindsym $mod+m exec spotify  --force-device-scale-factor=2
 
-# start texstudio
-bindsym $mod+t exec texstudio
+#############################################################################################
+#					Application mode
+#############################################################################################
 
-# start htop
-bindsym $mod+h exec "termite --exec=htop"
-
-# start ranger
-bindsym $mod+w exec "termite --exec=ranger"
-
-# start matlab
-bindsym $mod+p exec "termite --exec=matlab"
-
-# start atom
-bindsym $mod+a exec atom
-
-# start wicd
-bindsym $mod+i exec wicd-gtk
 for_window [class="Wicd"] floating enable
+					
+bindsym $mod+a mode "Application"
 
-# start octave
-bindsym $mod+o exec "termite --exec=octave"
+mode "Application"{
+	# matlab
+	bindsym m exec "termite --exec=matlab"; mode default
+
+	# octave
+	bindsym o exec octave; mode default
+	
+	# texstudio
+	bindsym t exec texstudio; mode default
+
+	# htop
+	bindsym h exec "termite --exec=htop"; mode default
+
+	# ranger
+	bindsym r exec "termite --exec=ranger"; mode default
+
+	# atom
+	bindsym a exec atom; mode default
+
+	# libreoffice
+	bindsym l exec libreoffice; mode default
+
+	# wicd
+	bindsym i exec wicd-gtk; mode default
+
+	# firefox
+	bindsym f exec firefox; mode default
+
+	# tor
+	bindsym n exec tor; mode defaultt
+
+	# clion
+	bindsym c exec clion; mode default
+
+	# spotify
+	bindsym s exec spotify --force-scale-factor=2; mode default
+
+	# chromium
+	bindsym b exec chromium --force-scale-factor=2; mode default
+
+	# terminal
+	bindsym Return exec termite; mode default	
+
+	# exit mode	
+	bindsym Escape mode "default"
+}
 
 #############################################################################################
 #					i3 Key Bindings
@@ -71,7 +101,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+c split h
+bindsym $mod+h split h
 
 # split in vertical orientation
 bindsym $mod+v split v
