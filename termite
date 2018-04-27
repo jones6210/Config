@@ -2,7 +2,7 @@
 font = Anonymous pro 20
 
 [colors]
-background = rgba(42,42,43,0.7)
+background = rgba(63,63,63,0.7)
 foreground = #c3c3c3
 foreground_bold = #c3c3c3
 

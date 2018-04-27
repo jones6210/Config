@@ -71,7 +71,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+shift+v split h
+bindsym $mod+c split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -286,20 +286,10 @@ workspace 3 output eDP1
 workspace 4 output eDP1
 workspace 5 output eDP1
 workspace 6 output eDP1
-#workspace 7 output eDP1
-#workspace 8 output eDP1
-#workspace 9 output eDP1
-#workspace 10 output eDP1
-#workspace 11 output HDMI3
-#workspace 12 output HDMI3
-#workspace 13 output HDMI3
-#workspace 14 output HDMI3
-#workspace 15 output HDMI3
-#workspace 16 output HDMI3
-#workspace 17 output HDMI3
-#workspace 18 output HDMI3
-#workspace 19 output HDMI3
-#workspace 20 output HDMI3
+workspace 7 output eDP1
+workspace 8 output eDP1
+workspace 9 output HDMI3
+workspace 10 output HDMI3
 
 # switch to workspace
 bindsym $mod+0x3c workspace number 0

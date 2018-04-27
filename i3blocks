@@ -13,7 +13,6 @@ border_bottom=2
 
 # Volume indicator
 [volume]
-#label=VOL
 label=
 command=pamixer --get-volume | xargs printf '%d'
 interval=1
@@ -22,6 +21,7 @@ border_top=0
 border_right=0
 border_left=0
 border_bottom=2
+
 
 [spotify]
 label=
