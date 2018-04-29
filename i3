@@ -24,38 +24,68 @@ exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/termite'
 bindsym $mod+Return exec termite
 
 # start rofi program launcher
-bindsym $mod+space exec "rofi -show run"
+bindsym $mod+space exec "rofi -show drun"
 
 # start chromium
 bindsym $mod+b exec chromium --force-device-scale-factor=2
 
-# start firefox
-bindsym $mod+shift+b exec firefox
-
 # start spotify
 bindsym $mod+m exec spotify  --force-device-scale-factor=2
 
-# start texstudio
-bindsym $mod+t exec texstudio
+#############################################################################################
+#					Application mode
+#############################################################################################
 
-# start htop
-bindsym $mod+h exec "termite --exec=htop"
-
-# start ranger
-bindsym $mod+w exec "termite --exec=ranger"
-
-# start matlab
-bindsym $mod+p exec "termite --exec=matlab"
-
-# start atom
-bindsym $mod+a exec atom
-
-# start wicd
-bindsym $mod+i exec wicd-gtk
 for_window [class="Wicd"] floating enable
+					
+bindsym $mod+a mode "Application"
 
-# start octave
-bindsym $mod+o exec "termite --exec=octave"
+mode "Application"{
+	# matlab
+	bindsym m exec "termite --exec=matlab"; mode default
+
+	# octave
+	bindsym o exec octave; mode default
+	
+	# texstudio
+	bindsym t exec texstudio; mode default
+
+	# htop
+	bindsym h exec "termite --exec=htop"; mode default
+
+	# ranger
+	bindsym r exec "termite --exec=ranger"; mode default
+
+	# atom
+	bindsym a exec atom; mode default
+
+	# libreoffice
+	bindsym l exec libreoffice; mode default
+
+	# wicd
+	bindsym i exec wicd-gtk; mode default
+
+	# firefox
+	bindsym f exec firefox; mode default
+
+	# tor
+	bindsym n exec tor; mode defaultt
+
+	# clion
+	bindsym c exec clion; mode default
+
+	# spotify
+	bindsym s exec spotify --force-scale-factor=2; mode default
+
+	# chromium
+	bindsym b exec chromium --force-scale-factor=2; mode default
+
+	# terminal
+	bindsym Return exec termite; mode default	
+
+	# exit mode	
+	bindsym Escape mode "default"
+}
 
 #############################################################################################
 #					i3 Key Bindings
@@ -71,7 +101,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+c split h
+bindsym $mod+h split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -267,7 +297,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 ##############################################################################################
-# Workspaces
+#					 Workspaces
 ##############################################################################################
 # toggle previous workspaces with current
 bindsym $mod+Tab workspace back_and_forth
@@ -344,4 +374,52 @@ bindsym $mod+n exec "i3-input -F 'Workspace %s' -P 'Workspace: '"
 bindsym $mod+Shift+n exec "i3-input -F 'move container to workspace %s' -P 'Move to workspace '"
 
 #############################################################################################
+#				Workspace mode
 #############################################################################################
+
+bindsym $mod+w mode "Workspace"
+
+mode "Workspace"{
+
+bindsym 0x3c workspace number 0; mode default
+bindsym 1 workspace 1; mode default
+bindsym 2 workspace 2; mode default
+bindsym 3 workspace 3; mode default
+bindsym 4 workspace 4; mode default
+bindsym 5 workspace 5; mode default
+bindsym 6 workspace 6; mode default
+bindsym 7 workspace 7; mode default
+bindsym 8 workspace 8; mode default
+bindsym 9 workspace 9; mode default
+bindsym 0 workspace 10; mode default
+
+bindsym a workspace 11:A; mode default
+bindsym b workspace 12:B; mode default
+bindsym c workspace 13:C; mode default
+bindsym d workspace 14:D; mode default
+bindsym e workspace 15:E; mode default
+bindsym f workspace 16:F; mode default
+bindsym g workspace 17:G; mode default
+bindsym h workspace 18:H; mode default
+bindsym i workspace 19:I; mode default
+bindsym j workspace 20:J; mode default
+bindsym k workspace 21:K; mode default
+bindsym l workspace 22:L; mode default
+bindsym m workspace 23:M; mode default
+bindsym n workspace 24:N; mode default
+bindsym o workspace 25:O; mode default
+bindsym p workspace 26:P; mode default
+bindsym q workspace 27:Q; mode default
+bindsym r workspace 28:R; mode default
+bindsym s workspace 29:S; mode default
+bindsym t workspace 30:T; mode default
+bindsym u workspace 31:U; mode default
+bindsym v workspace 32:V; mode default
+bindsym w workspace 33:W; mode default
+bindsym x workspace 34:X; mode default
+bindsym y workspace 35:Y; mode default
+bindsym z workspace 36:Z; mode default
+
+bindsym Return mode "default"
+bindsym Escape mode "default"
+}
