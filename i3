@@ -297,7 +297,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 ##############################################################################################
-# Workspaces
+#					 Workspaces
 ##############################################################################################
 # toggle previous workspaces with current
 bindsym $mod+Tab workspace back_and_forth
@@ -374,4 +374,52 @@ bindsym $mod+n exec "i3-input -F 'Workspace %s' -P 'Workspace: '"
 bindsym $mod+Shift+n exec "i3-input -F 'move container to workspace %s' -P 'Move to workspace '"
 
 #############################################################################################
+#				Workspace mode
 #############################################################################################
+
+bindsym $mod+w mode "Workspace"
+
+mode "Workspace"{
+
+bindsym 0x3c workspace number 0; mode default
+bindsym 1 workspace 1; mode default
+bindsym 2 workspace 2; mode default
+bindsym 3 workspace 3; mode default
+bindsym 4 workspace 4; mode default
+bindsym 5 workspace 5; mode default
+bindsym 6 workspace 6; mode default
+bindsym 7 workspace 7; mode default
+bindsym 8 workspace 8; mode default
+bindsym 9 workspace 9; mode default
+bindsym 0 workspace 10; mode default
+
+bindsym a workspace 11:A; mode default
+bindsym b workspace 12:B; mode default
+bindsym c workspace 13:C; mode default
+bindsym d workspace 14:D; mode default
+bindsym e workspace 15:E; mode default
+bindsym f workspace 16:F; mode default
+bindsym g workspace 17:G; mode default
+bindsym h workspace 18:H; mode default
+bindsym i workspace 19:I; mode default
+bindsym j workspace 20:J; mode default
+bindsym k workspace 21:K; mode default
+bindsym l workspace 22:L; mode default
+bindsym m workspace 23:M; mode default
+bindsym n workspace 24:N; mode default
+bindsym o workspace 25:O; mode default
+bindsym p workspace 26:P; mode default
+bindsym q workspace 27:Q; mode default
+bindsym r workspace 28:R; mode default
+bindsym s workspace 29:S; mode default
+bindsym t workspace 30:T; mode default
+bindsym u workspace 31:U; mode default
+bindsym v workspace 32:V; mode default
+bindsym w workspace 33:W; mode default
+bindsym x workspace 34:X; mode default
+bindsym y workspace 35:Y; mode default
+bindsym z workspace 36:Z; mode default
+
+bindsym Return mode "default"
+bindsym Escape mode "default"
+}
