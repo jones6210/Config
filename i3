@@ -333,16 +333,6 @@ bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
-bindsym $mod1+1 workspace 11
-bindsym $mod1+2 workspace 12
-bindsym $mod1+3 workspace 13
-bindsym $mod1+4 workspace 14
-bindsym $mod1+5 workspace 15
-bindsym $mod1+6 workspace 16
-bindsym $mod1+7 workspace 17
-bindsym $mod1+8 workspace 18
-bindsym $mod1+9 workspace 19
-bindsym $mod1+0 workspace 20
 
 # move focused container to workspace
 bindsym $mod+Shift+0x3c move container to workspace number 0
@@ -356,16 +346,6 @@ bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
-bindsym $mod1+Shift+1 move container to workspace 11
-bindsym $mod1+Shift+2 move container to workspace 12
-bindsym $mod1+Shift+3 move container to workspace 13
-bindsym $mod1+Shift+4 move container to workspace 14
-bindsym $mod1+Shift+5 move container to workspace 15
-bindsym $mod1+Shift+6 move container to workspace 16
-bindsym $mod1+Shift+7 move container to workspace 17
-bindsym $mod1+Shift+8 move container to workspace 18
-bindsym $mod1+Shift+9 move container to workspace 19
-bindsym $mod1+Shift+0 move container to workspace 20
 
 # custom workspace named workspace using i3-input
 bindsym $mod+n exec "i3-input -F 'Workspace %s' -P 'Workspace: '"
