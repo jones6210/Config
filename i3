@@ -402,4 +402,95 @@ bindsym z workspace 36:Z; mode default
 
 bindsym Return mode "default"
 bindsym Escape mode "default"
+
+bindsym space mode "Move"
+}
+
+mode "Move"{
+
+bindsym 0 move container to workspace number 0; mode default
+bindsym 1 move container to workspace 1;mode default
+bindsym 2 move container to workspace 2;mode default
+bindsym 3 move container to workspace 3;mode default
+bindsym 4 move container to workspace 4;mode default
+bindsym 5 move container to workspace 5;mode default
+bindsym 6 move container to workspace 6;mode default
+bindsym 7 move container to workspace 7;mode default
+bindsym 8 move container to workspace 8;mode default
+bindsym 9 move container to workspace 9;mode default
+
+bindsym a move container to workspace 11:A;mode default
+bindsym b move container to workspace 12:B;mode default
+bindsym c move container to workspace 13:C;mode default
+bindsym d move container to workspace 14:D;mode default
+bindsym e move container to workspace 15:E;mode default
+bindsym f move container to workspace 16:F;mode default
+bindsym g move container to workspace 17:G;mode default
+bindsym h move container to workspace 18:H;mode default
+bindsym i move container to workspace 19:I;mode default
+bindsym j move container to workspace 20:J;mode default
+bindsym k move container to workspace 21:K;mode default
+bindsym l move container to workspace 22:L;mode default
+bindsym m move container to workspace 23:M;mode default
+bindsym n move container to workspace 24:N;mode default
+bindsym o move container to workspace 25:O;mode default
+bindsym p move container to workspace 26:P;mode default
+bindsym q move container to workspace 27:Q;mode default
+bindsym r move container to workspace 28:R;mode default
+bindsym s move container to workspace 29:S;mode default
+bindsym t move container to workspace 30:T;mode default
+bindsym u move container to workspace 31:U;mode default
+bindsym v move container to workspace 32:V;mode default
+bindsym w move container to workspace 33:W;mode default
+bindsym x move container to workspace 34:x;mode default
+bindsym y move container to workspace 35:Y;mode default
+bindsym z move container to workspace 36:Z;mode default
+
+bindsym space mode "Move and follow"
+
+bindsym Return mode "default"
+bindsym Escape mode "default"
+}
+
+mode "Move and follow" {
+bindsym 0 move container to workspace 0:; workspace 0:; mode default
+bindsym 1 move container to workspace 1; workspace 1; mode default
+bindsym 2 move container to workspace 2; workspace 2; mode default
+bindsym 3 move container to workspace 3; workspace 3; mode default
+bindsym 4 move container to workspace 4; workspace 4; mode default
+bindsym 5 move container to workspace 5; workspace 5; mode default
+bindsym 6 move container to workspace 6; workspace 6; mode default
+bindsym 7 move container to workspace 7; workspace 7; mode default
+bindsym 8 move container to workspace 8; workspace 8; mode default
+bindsym 9 move container to workspace 9; workspace 9; mode default
+
+bindsym a move container to workspace 11:A; workspace 11:A; mode default
+bindsym b move container to workspace 12:B; workspace 12:B; mode default
+bindsym c move container to workspace 13:C; workspace 13:C; mode default
+bindsym d move container to workspace 14:D; workspace 14:D; mode default
+bindsym e move container to workspace 15:E; workspace 15:E; mode default
+bindsym f move container to workspace 16:F; workspace 16:F; mode default
+bindsym g move container to workspace 17:G; workspace 17:G; mode default
+bindsym h move container to workspace 18:H; workspace 18:H; mode default
+bindsym i move container to workspace 19:I; workspace 19:I; mode default
+bindsym j move container to workspace 20:J; workspace 20:J; mode default
+bindsym k move container to workspace 21:K; workspace 21:K; mode default
+bindsym l move container to workspace	22:L; workspace 22:L; mode default
+bindsym m move container to workspace 23:M; workspace 23:M; mode default
+bindsym n move container to workspace 24:N; workspace 24:N; mode default
+bindsym o move container to workspace 25:O; workspace 25:O; mode default
+bindsym p move container to workspace 26:P; workspace 26:P; mode default
+bindsym q move container to workspace 27:Q; workspace 27:Q; mode default
+bindsym r move container to workspace 28:R; workspace 28:R; mode default
+bindsym s move container to workspace 29:S; workspace 29:S; mode default
+bindsym t move container to workspace 30:T; workspace 30:T; mode default
+bindsym u move container to workspace 31:U; workspace 31:U; mode default
+bindsym v move container to workspace 32:V; workspace 32:V; mode default
+bindsym w move container to workspace 33:W; workspace 33:W; mode default
+bindsym x move container to workspace 34:X; workspace 34:X; mode default
+bindsym y move container to workspace 35:Y; workspace 35:Y; mode default
+bindsym z move container to workspace 36:Z; workspace 36:Z; mode default
+
+bindsym Return mode "default"
+bindsym Escape mode "default"
 }
