@@ -173,14 +173,12 @@ bindsym $mod+r mode "Resize"
 
 # resize mode
 mode "Resize" {
-        # same bindings, but for the arrow keys
+        
         bindsym Left resize shrink width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
         bindsym Up resize shrink height 10 px or 10 ppt
         bindsym Right resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape
-        bindsym Return mode "default"
         bindsym Escape mode "default"
 
         bindsym space mode "Resize 5 px"
@@ -195,8 +193,7 @@ mode "Resize 5 px" {
 	bindsym Up resize shrink height 5 px or 5 ppt
 	bindsym Right resize grow width 5 px or 5 ppt
 
-	bindsym Return mode "default"
-  bindsym Escape mode "default"
+ 	bindsym Escape mode "default"
 
 	bindsym space mode "Resize 2 px"
 	bindsym BackSpace mode "Resize"
@@ -208,7 +205,6 @@ mode "Resize 2 px" {
 	bindsym Up resize shrink height 2 px or 2 ppt
 	bindsym Right resize grow width 2 px or 2 ppt
 
-	bindsym Return mode "default"
 	bindsym Escape mode "default"
 
 	bindsym space mode "Resize 1 px"
@@ -221,7 +217,6 @@ mode "Resize 1 px" {
 	bindsym Up resize shrink height 1 px or 1 ppt
 	bindsym Right resize grow width 1 px or 1 ppt
 
-	bindsym Return mode "default"
 	bindsym Escape mode "default"
 
 	bindsym space mode "Resize 1 px"
@@ -347,12 +342,6 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
-# custom workspace named workspace using i3-input
-bindsym $mod+n exec "i3-input -F 'Workspace %s' -P 'Workspace: '"
-
-# move container to custom workspace using i3-input
-bindsym $mod+Shift+n exec "i3-input -F 'move container to workspace %s' -P 'Move to workspace '"
-
 #############################################################################################
 #				Workspace mode
 #############################################################################################
@@ -400,7 +389,8 @@ bindsym x workspace 34:X; mode default
 bindsym y workspace 35:Y; mode default
 bindsym z workspace 36:Z; mode default
 
-bindsym Return mode "default"
+bindsym Return exec "i3-input -F 'Workspace %s' -P 'Workspace: '"; mode default
+
 bindsym Escape mode "default"
 
 bindsym space mode "Move"
@@ -446,9 +436,10 @@ bindsym x move container to workspace 34:x;mode default
 bindsym y move container to workspace 35:Y;mode default
 bindsym z move container to workspace 36:Z;mode default
 
+bindsym Return  exec "i3-input -F 'move container to workspace %s' -P 'Move to workspace '"; mode default
+
 bindsym space mode "Move and follow"
 
-bindsym Return mode "default"
 bindsym Escape mode "default"
 }
 
@@ -491,6 +482,9 @@ bindsym x move container to workspace 34:X; workspace 34:X; mode default
 bindsym y move container to workspace 35:Y; workspace 35:Y; mode default
 bindsym z move container to workspace 36:Z; workspace 36:Z; mode default
 
-bindsym Return mode "default"
+bindsym Return exec "i3-input -F 'move container to workspace %s; workspace %s' -P 'Destination workspace name: '"; mode default
+
+bindsym space mode "Move"
+
 bindsym Escape mode "default"
 }
