@@ -5,8 +5,6 @@ font = Anonymous pro 20
 background = rgba(63,63,63,0.7)
 foreground = #c3c3c3
 foreground_bold = #c3c3c3
-
-
 # 16 color space
 
 # Black, Gray, Silver, White
@@ -19,10 +17,6 @@ color15 = #f7f7f7
 color1  = #db2d20
 color9  = #db2d20
 
-# Green
-color2  = #01a252
-color10 = #01a252
-
 # Yellow
 color3  = #fded02
 color11 = #fded02
@@ -32,8 +26,8 @@ color4  = #01a0e4
 color12 = #01a0e4
 
 # Purple
-color5  = #a16a94
-color13 = #a16a94
+#color5  = #a16a94
+#color13 = #a16a94
 
 # Teal
 color6  = #b5e4f4
