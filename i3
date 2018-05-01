@@ -398,7 +398,7 @@ bindsym space mode "Move"
 
 mode "Move"{
 
-bindsym 0 move container to workspace number 0; mode default
+bindsym 0x3c move container to workspace number 0; mode default
 bindsym 1 move container to workspace 1;mode default
 bindsym 2 move container to workspace 2;mode default
 bindsym 3 move container to workspace 3;mode default
@@ -408,6 +408,7 @@ bindsym 6 move container to workspace 6;mode default
 bindsym 7 move container to workspace 7;mode default
 bindsym 8 move container to workspace 8;mode default
 bindsym 9 move container to workspace 9;mode default
+bindsym 0 move container to worksapce 10;mode default
 
 bindsym a move container to workspace 11:A;mode default
 bindsym b move container to workspace 12:B;mode default
@@ -444,7 +445,7 @@ bindsym Escape mode "default"
 }
 
 mode "Move and follow" {
-bindsym 0 move container to workspace 0:; workspace 0:; mode default
+bindsym 0x3c move container to workspace 0:; workspace 0:; mode default
 bindsym 1 move container to workspace 1; workspace 1; mode default
 bindsym 2 move container to workspace 2; workspace 2; mode default
 bindsym 3 move container to workspace 3; workspace 3; mode default
@@ -454,6 +455,7 @@ bindsym 6 move container to workspace 6; workspace 6; mode default
 bindsym 7 move container to workspace 7; workspace 7; mode default
 bindsym 8 move container to workspace 8; workspace 8; mode default
 bindsym 9 move container to workspace 9; workspace 9; mode default
+bindsym 0 move container to workspace 10; workspace 10; mode default
 
 bindsym a move container to workspace 11:A; workspace 11:A; mode default
 bindsym b move container to workspace 12:B; workspace 12:B; mode default
@@ -466,7 +468,7 @@ bindsym h move container to workspace 18:H; workspace 18:H; mode default
 bindsym i move container to workspace 19:I; workspace 19:I; mode default
 bindsym j move container to workspace 20:J; workspace 20:J; mode default
 bindsym k move container to workspace 21:K; workspace 21:K; mode default
-bindsym l move container to workspace	22:L; workspace 22:L; mode default
+bindsym l move container to workspace 22:L; workspace 22:L; mode default
 bindsym m move container to workspace 23:M; workspace 23:M; mode default
 bindsym n move container to workspace 24:N; workspace 24:N; mode default
 bindsym o move container to workspace 25:O; workspace 25:O; mode default
