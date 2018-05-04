@@ -42,46 +42,46 @@ bindsym $mod+a mode "Application"
 
 mode "Application"{
 	# matlab
-	bindsym m exec "termite --exec=matlab"; mode default
+	bindsym m exec "termite --exec=matlab"; mode "default"
 
 	# octave
-	bindsym o exec octave; mode default
+	bindsym o exec octave; mode "default"
 	
 	# texstudio
-	bindsym t exec texstudio; mode default
+	bindsym t exec texstudio; mode "default"
 
 	# htop
-	bindsym h exec "termite --exec=htop"; mode default
+	bindsym h exec "termite --exec=htop"; mode "default"
 
 	# ranger
-	bindsym r exec "termite --exec=ranger"; mode default
+	bindsym r exec "termite --exec=ranger"; mode "default"
 
 	# atom
-	bindsym a exec atom; mode default
+	bindsym a exec atom; mode "default"
 
 	# libreoffice
-	bindsym l exec libreoffice; mode default
+	bindsym l exec libreoffice; mode "default"
 
 	# wicd
-	bindsym i exec wicd-gtk; mode default
+	bindsym i exec wicd-gtk; mode "default"
 
 	# firefox
-	bindsym f exec firefox; mode default
+	bindsym f exec firefox; mode "default"
 
 	# tor
-	bindsym n exec tor; mode defaultt
+	bindsym n exec tor-browser; mode "default"
 
 	# clion
-	bindsym c exec clion; mode default
+	bindsym c exec clion; mode "default"
 
 	# spotify
-	bindsym s exec spotify --force-scale-factor=2; mode default
+	bindsym s exec "spotify --force-scale-factor=2"; mode "default"
 
 	# chromium
-	bindsym b exec chromium --force-scale-factor=2; mode default
+	bindsym b exec "chromium --force-scale-factor=2"; mode "default"
 
-	# terminal
-	bindsym Return exec termite; mode default	
+	# pavucontrol
+	bindsym p exec pavucontrol; mode "default"	
 
 	# exit mode	
 	bindsym Escape mode "default"
