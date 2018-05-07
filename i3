@@ -118,9 +118,6 @@ bindsym $mod+ctrl+space focus mode_toggle
 # focus the parent container
 bindsym $mod+Shift+a focus parent
 
-# focus the child container
-#bindsym $mod+Shift+d focus child
-
 # removing titlebar on new window
 new_window none
 
@@ -268,10 +265,10 @@ bar{
 #					System
 #############################################################################################
 # screenshot whole screen
-bindsym ctrl+shift+3 exec "maim  ~/Screenshots/$(date '+%d-%m-%Y_%H:%M:%S').jpg"
+bindsym XF86LaunchA exec "maim  ~/Screenshots/$(date '+%d-%m-%Y_%H:%M:%S').jpg"
 
 # screenshot selected screen using mouse
-bindsym ctrl+shift+4 exec "maim -s ~/Screenshots/$(date '+%d-%m-%Y_%H:%M:%S').jpg"
+bindsym XF86LaunchB exec "maim -s ~/Screenshots/$(date '+%d-%m-%Y_%H:%M:%S').jpg"
 
 # i3lock
 bindsym $mod+l exec "i3lock -e -u -c 000000"
