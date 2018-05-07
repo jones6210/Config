@@ -81,7 +81,10 @@ mode "Application"{
 	bindsym b exec "chromium --force-scale-factor=2"; mode "default"
 
 	# pavucontrol
-	bindsym p exec pavucontrol; mode "default"	
+	bindsym p exec pavucontrol; mode "default"
+
+	# x2go client	
+	bindsym x exec x2goclient; mode "default"
 
 	# exit mode	
 	bindsym Escape mode "default"
