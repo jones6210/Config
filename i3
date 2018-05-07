@@ -86,6 +86,9 @@ mode "Application"{
 	# x2go client	
 	bindsym x exec x2goclient; mode "default"
 
+	# virtualbox
+	bindsym v exec virtualbox; mode "default"
+
 	# exit mode	
 	bindsym Escape mode "default"
 }
