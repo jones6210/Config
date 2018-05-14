@@ -314,8 +314,10 @@ workspace 5 output eDP1
 workspace 6 output eDP1
 workspace 7 output eDP1
 workspace 8 output eDP1
-workspace 9 output HDMI3
-workspace 10 output HDMI3
+workspace 9 output eDP1
+workspace 10 output eDP1
+workspace 11:A output HDMI3
+workspace 12:B output HDMI3
 
 # switch to workspace
 bindsym $mod+0x3c workspace number 0
