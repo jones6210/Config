@@ -229,7 +229,6 @@ mode "Resize 1 px" {
 #############################################################################################
 #					i3 Bar
 #############################################################################################
-# i3 bar for laptop screen (eDP1)
 bar {
 	output eDP1
         status_command i3blocks -c ~/.config/i3blocks/config
@@ -241,14 +240,13 @@ bar {
 	colors{
 	background #28282899
         statusline #D3D3D3
-        focused_workspace #458588d7 #458588d7 #000000
+        focused_workspace #01A0E4b7 #01A0E4b7 #000000
         active_workspace #28282899 #28282899 #3d3b38
         inactive_workspace #28282899 #28282899 #3d3b38
         urgent_workspace #28282899 #28282899 #458588d7
 	}
 }
 
-# i3 bar for external monitor (HDMI3)
 bar{
 	output HDMI3
 	status_command i3blocks -c  ~/.config/i3blocks/config_monitor
@@ -260,7 +258,7 @@ bar{
         colors{
         background #28282899
         statusline #D3D3D3
-        focused_workspace #458588d7 #458588d7 #000000
+        focused_workspace #01A0E4d7 #01A0E4d7 #000000
         active_workspace #28282899 #28282899 #3d3b38
         inactive_workspace #28282899 #28282899 #3d3b38
         urgent_workspace #28282899 #28282899 #458588d75r
