@@ -12,10 +12,10 @@ set $mod1 Mod1
 floating_modifier $mod
 
 # autostart compton
-exec --no-startup-id compton -b
+exec_always compton -b
 
-# autostart workspace 1 with terminal
-exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/termite'
+# autostart redshift
+exec_always redshift
 
 #############################################################################################
 #					Application Key Bindings
@@ -257,8 +257,8 @@ bar{
 	strip_workspace_numbers yes
         colors{
         background #28282899
-        statusline #D3D3D3
-        focused_workspace #01A0E4d7 #01A0E4d7 #000000
+        statusline #D3D3D3 
+	focused_workspace #01A0E4d7 #01A0E4d7 #000000
         active_workspace #28282899 #28282899 #3d3b38
         inactive_workspace #28282899 #28282899 #3d3b38
         urgent_workspace #28282899 #28282899 #458588d75r
