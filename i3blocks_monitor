@@ -1,7 +1,7 @@
 [time]
 command=date '+%d/%m/%Y %H:%M:%S'
 interval=1
-border=#b0c0b4d7
+border=#d3d3d3d7
 border_top=0
 border_right=0
 border_left=0
