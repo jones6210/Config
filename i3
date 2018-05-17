@@ -45,7 +45,7 @@ mode "Application"{
 	bindsym m exec "termite --exec=matlab"; mode "default"
 
 	# octave
-	bindsym o exec octave; mode "default"
+	bindsym o exec "octave --gui"; mode "default"
 	
 	# texstudio
 	bindsym t exec texstudio; mode "default"
