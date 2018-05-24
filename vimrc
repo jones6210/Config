@@ -1,3 +1,6 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"					Vundle
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""					
 set nocompatible            
 filetype off                  
 
@@ -23,6 +26,9 @@ syntax enable
 " Highlight search results
 set hlsearch
 
+" Search as characters entered
+set incsearch
+
 " Show current position row and column
 set ruler
 
@@ -31,7 +37,8 @@ set laststatus=2
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "					Colours
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""  "Lightline colour
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""  
+"Lightline colour
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ }
@@ -51,4 +58,8 @@ set smarttab
 " Linebreak on 100 characters
 set lbr
 set tw=100
+
+" Tap space
+set tabstop=4
+set softtabstop=4
 
