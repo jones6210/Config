@@ -177,10 +177,8 @@ bindsym XF86AudioPrev exec "playerctl previous"
 #############################################################################################
 #					Resize
 #############################################################################################
-# resize windows
 bindsym $mod+r mode "Resize"
 
-# resize mode
 mode "Resize" {
         
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -232,6 +230,20 @@ mode "Resize 1 px" {
 	bindsym BackSpace mode "Resize 2 px"
 }
 
+
+############################################################################################
+#									External Monitor
+############################################################################################
+bindsym	$mod+e mode "External Monitor"
+
+mode "External Monitor"{
+    bindsym Left exec "bash ~/config/scripts/move_monitor.sh --left"; mode "default"
+    bindsym Right exec "bash ~/config/scripts/move_monitor.sh --right"; mode "default"
+    bindsym s exec "bash ~/config/scripts/move_monitor.sh --eDP1"; mode "default"
+
+    bindsym Escape mode "default"
+} 							
+
 #############################################################################################
 #					i3 Bar
 #############################################################################################
@@ -257,7 +269,7 @@ bar{
 	output HDMI3
 	status_command i3blocks -c  ~/.config/i3blocks/config_monitor
         i3bar_command i3bar -t
-        tray_output none
+        tray_output non
         position top
 	height 50
 	strip_workspace_numbers yes
