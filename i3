@@ -1,6 +1,9 @@
 ##############################################################################################
 #					Startup
 ##############################################################################################
+# xrandr
+exec_always xrandr --output eDP1 --mode 2880x1800_60.00 --pos 3264x36 --output HDMI3 --auto --scale 1.7x1.7 --pos 0x0 --fb 6144x1836 --dpi 200
+
 # desktop background
 exec_always feh --bg-scale ~/Images/sunset_winter_railway_2880x1800.jpg ~/Images/desktopimages.jpg
 
@@ -318,8 +321,10 @@ workspace 7 output eDP1
 workspace 8 output eDP1
 workspace 9 output eDP1
 workspace 10 output eDP1
-workspace 11:A output HDMI3
-workspace 12:B output HDMI3
+workspace 33:W output HDMI3
+workspace 34:X output HDMI3
+workspace 35:Y output HDMI3
+workspace 36:Z output HDMI3
 
 # switch to workspace
 bindsym $mod+0x3c workspace number 0
