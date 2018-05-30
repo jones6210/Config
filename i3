@@ -1,6 +1,9 @@
 ##############################################################################################
 #					Startup
 ##############################################################################################
+# desktop background
+exec_always feh --bg-scale ~/Images/sunset_winter_railway_2880x1800.jpg ~/Images/desktopimages.jpg
+
 # i3 font
 font pango:Roboto 8
 
@@ -305,7 +308,6 @@ bindsym $mod+Right workspace next
 bindsym $mod+Left workspace prev
 
 # assigned workspaces
-workspace 0 output eDP1
 workspace 1 output eDP1
 workspace 2 output eDP1
 workspace 3 output eDP1
