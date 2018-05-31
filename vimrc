@@ -57,9 +57,9 @@ set confirm
 " Use smart tabs
 set smarttab
 
-" Linebreak on 100 characters
+" Linebreak on 500 characters
 set lbr
-set tw=100
+set tw=500
 
 " Tap space
 set tabstop=4
