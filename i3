@@ -8,7 +8,7 @@ exec_always xrandr --output eDP1 --mode 2880x1800_60.00 --pos 3264x36 --output H
 exec_always feh --bg-scale ~/Images/sunset_winter_railway_2880x1800.jpg ~/Images/desktopimages.jpg
 
 # i3 font
-font pango:Roboto 8
+font pango:Roboto 7.5
 
 # mod key
 set $mod Mod4
