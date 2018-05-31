@@ -239,7 +239,7 @@ bindsym	$mod+e mode "External Monitor"
 mode "External Monitor"{
     bindsym Left exec "bash ~/config/scripts/move_monitor.sh --left"; mode "default"
     bindsym Right exec "bash ~/config/scripts/move_monitor.sh --right"; mode "default"
-    bindsym s exec "bash ~/config/scripts/move_monitor.sh --eDP1"; mode "default"
+    bindsym Up exec "bash ~/config/scripts/move_monitor.sh --up"; mode "default"
 
     bindsym Escape mode "default"
 } 							
