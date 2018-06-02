@@ -1,10 +1,13 @@
 #!/bin/bash
 
+backlight_val=$(xbacklight -get)
+keyboard_bright=$(kbdlight get)
+
 xbacklight -set	0
 kbdlight off
 
 HDMI_STATUS=$(</sys/class/drm/card0/card0-HDMI-A-3/status )
-MONITOR_POS=$(</tmp/monitor_pos.txt )
+MONITOR_POS=$(</tmp/monitor_pos )
 
 if [ "connected" == "$HDMI_STATUS" ]; then
     xrandr --output HDMI3 --off
@@ -20,3 +23,6 @@ elif [ "above" == "$MONITOR_POS" ]; then
 		 xrandr --output eDP1 --mode 2800x1800_60.00 --pos 192x1836 --output HDMI3 --auto --scale 1.7x1.7 --pos 0x0 --fb 3264x3636
 
 fi
+
+xbacklight -set $backlight_val
+kbdlight set $keyboard_bright
