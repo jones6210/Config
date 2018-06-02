@@ -293,7 +293,7 @@ bindsym XF86LaunchA exec "maim  ~/Screenshots/$(date '+%d-%m-%Y_%H:%M:%S').jpg"
 bindsym XF86LaunchB exec "maim -s ~/Screenshots/$(date '+%d-%m-%Y_%H:%M:%S').jpg"
 
 # i3lock
-bindsym $mod+l exec "i3lock -e -u -c 000000"
+bindsym $mod+l exec "sh ~/config/scripts/lock.sh"
 
 # suspend system
 bindsym $mod+s exec "systemctl suspend"
