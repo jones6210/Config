@@ -299,9 +299,6 @@ bindsym $mod+l exec "sh ~/config/scripts/lock.sh"
 # suspend system
 bindsym $mod+s exec "systemctl suspend"
 
-# toggle external monitor
-bindsym $mod+Shift+t exec "sh ~/.config/scripts/monitorplugin.sh"
-
 # reload the configuration file
 bindsym $mod+Shift+c reload
 
