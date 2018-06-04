@@ -19,6 +19,17 @@ border_right=0
 border_left=0
 border_bottom=2
 
+# Brightness indicator
+[brightness]
+label=
+command=~/config/blocks/brightness.sh
+interval=1
+border=#01a0e4d7
+border_top=0
+border_right=0
+border_left=0
+border_bottom=2
+
 # Spotify
 [spotify]
 label=
