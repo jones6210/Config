@@ -288,11 +288,10 @@ bar{
 #					System
 #############################################################################################
 # screenshot whole screen
-bindsym XF86LaunchA exec "maim  ~/Screenshots/$(date '+%d-%m-%Y_%H:%M:%S').jpg"
+bindsym XF86LaunchA exec "bash ~/config/scripts/screenshot.sh --whole"
 
 # screenshot selected screen using mouse
-bindsym XF86LaunchB exec "maim -s ~/Screenshots/$(date '+%d-%m-%Y_%H:%M:%S').jpg"
-
+bindsym XF86LaunchB exec "bash ~/config/scripts/screenshot.sh --selected"
 # i3lock
 bindsym $mod+l exec "sh ~/config/scripts/lock.sh"
 
