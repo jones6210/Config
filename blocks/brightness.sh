@@ -1,6 +1,15 @@
 #!/bin/bash
 
-brightness=$(xbacklight -get) 
-brightness=$( printf "%.0f" $brightness )
+screen_brightness=$(xbacklight -get) 
+screen_brightness=$( printf "%.0f" $screen_brightness )
 
-echo -e $brightness
+keybright=$(kbdlight get)
+
+#echo -e $screen_brightness
+
+case $BLOCK_BUTTON in 
+
+		1) echo -e $keybright ;;
+		
+esac
+echo -e $screen_brightness
