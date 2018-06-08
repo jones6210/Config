@@ -21,7 +21,7 @@ floating_modifier $mod
 exec_always compton -b
 
 # autostart redshift
-exec_always redshift
+exec_always redshift	
 
 #############################################################################################
 #					Application Key Bindings
@@ -57,7 +57,7 @@ mode "Application"{
 	bindsym t exec texstudio; mode "default"
 
 	# htop
-	bindsym h exec "termite --exec=htop"; mode "default"
+	bindsym h exec "terite --exec=htop"; mode "default"
 
 	# ranger
 	bindsym r exec "termite --exec=ranger"; mode "default"
@@ -94,6 +94,9 @@ mode "Application"{
 
 	# virtualbox
 	bindsym v exec virtualbox; mode "default"
+
+    # audacity
+    bindsym e exec audacity; mode "default"
 
 	# exit mode	
 	bindsym Escape mode "default"
