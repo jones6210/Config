@@ -1,6 +1,6 @@
 [options]
 font = Anonymous pro 20
-scrollback_lines = 500
+scrollback_lines = -1
 
 [colors]
 background = rgba(63,63,63,0.7)
