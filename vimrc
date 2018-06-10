@@ -13,6 +13,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'c.vim'
 Plugin 'itchyny/lightline.vim'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()           
 filetype plugin indent on
@@ -64,4 +65,16 @@ set tw=500
 " Tap space
 set tabstop=4
 set softtabstop=4
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"						Clipboard
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set clipboard
+set clipboard=unnamedplus
+
+" Set keybindings
+vmap <C-c> y
+vmap <C-x> "+c
+vmap <C-v> <ESC>P
+imap <C-v> <C-r><C-o>+
 
