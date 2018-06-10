@@ -5,7 +5,7 @@
 exec_always xrandr --output eDP1 --mode 2880x1800_60.00 --dpi 200 --output HDMI3 --off
 
 # desktop background
-exec_always feh --bg-scale ~/Images/tornado.jpg ~/Images/grass.jpeg
+exec_always feh --bg-scale ~/config/image/eDP1_image ~/config/image/HDMI3_image
 
 # i3 font
 font pango:Roboto 7.5
