@@ -2,7 +2,7 @@
 #					Startup
 ##############################################################################################
 # xrandr
-exec_always xrandr --output eDP1 --mode 2880x1800_60.00 --dpi 200 --output HDMI3 --off
+exec_always xrandr --output eDP1 --mode 2880x1800_60.00 --output HDMI3 --off
 
 # desktop background
 exec_always feh --bg-scale ~/config/image/eDP1_image ~/config/image/HDMI3_image
@@ -57,7 +57,7 @@ mode "Application"{
 	bindsym t exec texstudio; mode "default"
 
 	# htop
-	bindsym h exec "terite --exec=htop"; mode "default"
+	bindsym h exec "termite --exec=htop"; mode "default"
 
 	# ranger
 	bindsym r exec "termite --exec=ranger"; mode "default"
