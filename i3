@@ -5,7 +5,7 @@
 exec_always xrandr --output eDP1 --mode 2880x1800_60.00 --output HDMI3 --off
 
 # desktop background
-exec_always feh --bg-scale ~/config/image/eDP1_image ~/config/image/HDMI3_image
+exec_always feh --bg-scale  ~/config/image/eDP1_image ~/config/image/HDMI3_image
 
 # i3 font
 font pango:Roboto 7.5
@@ -21,7 +21,8 @@ floating_modifier $mod
 exec_always compton -b
 
 # autostart redshift
-exec_always redshift	
+exec_always redshift
+#exec_always bash-c 'redshift > /tmp/redshift.log'
 
 #############################################################################################
 #					Application Key Bindings
@@ -43,7 +44,7 @@ bindsym $mod+m exec spotify  --force-device-scale-factor=2
 #############################################################################################
 
 for_window [class="Wicd"] floating enable
-					
+
 bindsym $mod+a mode "Application"
 
 mode "Application"{
@@ -52,7 +53,7 @@ mode "Application"{
 
 	# octave
 	bindsym o exec "octave --gui"; mode "default"
-	
+
 	# texstudio
 	bindsym t exec texstudio; mode "default"
 
@@ -89,7 +90,7 @@ mode "Application"{
 	# pavucontrol
 	bindsym p exec pavucontrol; mode "default"
 
-	# x2go client	
+	# x2go client
 	bindsym x exec x2goclient; mode "default"
 
 	# virtualbox
@@ -98,7 +99,7 @@ mode "Application"{
     # audacity
     bindsym e exec audacity; mode "default"
 
-	# exit mode	
+	# exit mode
 	bindsym Escape mode "default"
 }
 
@@ -183,7 +184,7 @@ bindsym XF86AudioPrev exec "playerctl previous"
 bindsym $mod+r mode "Resize"
 
 mode "Resize" {
-        
+
         bindsym Left resize shrink width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
         bindsym Up resize shrink height 10 px or 10 ppt
@@ -246,7 +247,7 @@ mode "External Monitor"{
     bindsym t exec "bash ~/config/scripts/toggle_monitor.sh"; mode "default"
 
     bindsym Escape mode "default"
-} 							
+}
 
 #############################################################################################
 #					i3 Bar
@@ -279,7 +280,7 @@ bar{
 	strip_workspace_numbers yes
         colors{
         background #28282899
-        statusline #D3D3D3 
+        statusline #D3D3D3
 	focused_workspace #01A0E4d7 #01A0E4d7 #000000
         active_workspace #28282899 #28282899 #3d3b38
         inactive_workspace #28282899 #28282899 #3d3b38
