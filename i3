@@ -111,6 +111,9 @@ mode "Application - VM Management" {
     # start vm
     bindsym s exec "termite --exec ~/config/scripts/start_vm.sh"; mode "default"
 
+    # snapshot vm
+    bindsym b exec "termite --exec ~/config/scripts/backing_vm.sh"; mode "default"
+
     # exit mode
     bindsym Escape mode "default" 
 }
