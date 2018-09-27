@@ -93,14 +93,26 @@ mode "Application"{
 	# x2go client
 	bindsym x exec x2goclient; mode "default"
 
-	# virtualbox
-	bindsym v exec virtualbox; mode "default"
-
     # audacity
     bindsym e exec audacity; mode "default"
 
+    # vm mode
+    bindsym v mode "Application - VM Management"    
+
 	# exit mode
 	bindsym Escape mode "default"
+}
+
+mode "Application - VM Management" {
+
+    # create vm
+    bindsym n exec "termite --exec ~/config/scripts/create_vm.sh"; mode "default"
+
+    # start vm
+    bindsym s exec "termite --exec ~/config/scripts/start_vm.sh"; mode "default"
+
+    # exit mode
+    bindsym Escape mode "default" 
 }
 
 #############################################################################################
