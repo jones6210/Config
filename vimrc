@@ -7,13 +7,13 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-"call vundle#begin('~/config/plugins')
-
-
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'c.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'bothyhead/delphi'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'vim-gitgutter'
 
 call vundle#end()           
 filetype plugin indent on
