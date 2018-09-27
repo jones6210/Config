@@ -4,11 +4,12 @@ temp-night=3500
 
 fade=1
 
-;elevation-high=3
-;elevation-low=-6
+; Solar
+elevation-high=3
+elevation-low=-6
 
+;settings
 location-provider=manual
-
 adjustment-method=randr
 
 [manual]
