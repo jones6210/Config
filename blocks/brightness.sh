@@ -1,9 +1,9 @@
 #!/bin/bash
 
-screen_brightness=$(xbacklight -get) 
+screen_brightness=$(light -G) 
 screen_brightness=$( printf "%.0f" $screen_brightness )
 
-keybright=$(kbdlight get)
+keybright=$(light -kG)
 
 #echo -e $screen_brightness
 
