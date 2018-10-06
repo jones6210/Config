@@ -21,8 +21,7 @@ floating_modifier $mod
 exec_always compton -b
 
 # autostart redshift
-exec_always redshift
-#exec_always bash-c 'redshift > /tmp/redshift.log'
+exec_always 'pkill redshift; sleep 5; redshift -l 53.04:2.99'
 
 #############################################################################################
 #					Application Key Bindings
@@ -164,16 +163,16 @@ gaps outer  2
 #					Media Keybindings
 #############################################################################################
 # keyboard backlight brightness down
-bindsym XF86MonBrightnessDown exec "xbacklight -dec 10"
+bindsym XF86MonBrightnessDown exec "light -U 5"
 
 # keyboard backlight brightness up
-bindsym XF86MonBrightnessUp exec "xbacklight -inc 10"
+bindsym XF86MonBrightnessUp exec "light -A 5"
 
 # screen brightness down
-bindsym XF86KbdBrightnessDown exec "kbdlight down 2.5"
+bindsym XF86KbdBrightnessDown exec "light -kU 2.5"
 
 # screen brightness up
-bindsym XF86KbdBrightnessUp exec "kbdlight up 2.5"
+bindsym XF86KbdBrightnessUp exec "light -kA 2.5"
 
 # toggle mute volume
 bindsym XF86AudioMute exec "pamixer --toggle-mute"
@@ -348,7 +347,6 @@ workspace 6 output eDP1
 workspace 7 output eDP1
 workspace 8 output eDP1
 workspace 9 output eDP1
-workspace 10 output eDP1
 workspace 33:W output HDMI3
 workspace 34:X output HDMI3
 workspace 35:Y output HDMI3
@@ -365,7 +363,7 @@ bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
+bindsym $mod+0 workspace number 10
 
 # move focused container to workspace
 bindsym $mod+Shift+0x3c move container to workspace number 0
@@ -378,7 +376,7 @@ bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10
+bindsym $mod+Shift+0 move container to workspace number 10
 
 #############################################################################################
 #				Workspace mode
@@ -398,7 +396,7 @@ bindsym 6 workspace 6; mode default
 bindsym 7 workspace 7; mode default
 bindsym 8 workspace 8; mode default
 bindsym 9 workspace 9; mode default
-bindsym 0 workspace 10; mode default
+bindsym 0 workspace number 10; mode default
 
 bindsym a workspace 11:A; mode default
 bindsym b workspace 12:B; mode default
@@ -446,7 +444,7 @@ bindsym 6 move container to workspace 6;mode default
 bindsym 7 move container to workspace 7;mode default
 bindsym 8 move container to workspace 8;mode default
 bindsym 9 move container to workspace 9;mode default
-bindsym 0 move container to worksapce 10;mode default
+bindsym 0 move container to worksapce number 10;mode default
 
 bindsym a move container to workspace 11:A;mode default
 bindsym b move container to workspace 12:B;mode default
@@ -493,7 +491,7 @@ bindsym 6 move container to workspace 6; workspace 6; mode default
 bindsym 7 move container to workspace 7; workspace 7; mode default
 bindsym 8 move container to workspace 8; workspace 8; mode default
 bindsym 9 move container to workspace 9; workspace 9; mode default
-bindsym 0 move container to workspace 10; workspace 10; mode default
+bindsym 0 move container to workspace number 10; workspace 10:; mode default
 
 bindsym a move container to workspace 11:A; workspace 11:A; mode default
 bindsym b move container to workspace 12:B; workspace 12:B; mode default
